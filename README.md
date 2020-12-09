@@ -1,1 +1,6 @@
-# Tweet sentiment analyzer using ML, RegEx etc
+# Tweet sentiment analyzer
+This is a basic sentiment analyzer that uses relatively simple ML models to classify tweets on airlines as positive, neutral, or negative. It uses a data bank of 5000 tweets for both training and testing. The text is cleaned and preprocessed (using RegEx, stopword removal, Lemmatizing) before it is vectorized and passed through the training classifier. A variety of simple ML approaches are used, including Bayesian ones (Bernoulli Naive Bayes and Multinomial Naive Bayes), and others like SVM, Regression, and a rudimentary neural net (basic Sklearn multilayer perceptron). The final version uses an ensemble voting classifier to get up to 80% accuracy.
+
+This was made for an assignment in the Artificial Intelligence course at the University of New South Wales (UNSW). More details are in the assignment specification. The subject code has not been used in plaintext in this readme or the repo title to prevent current students from finding it and being tempted to plagiarize from it (there are heavy penalties for that). 
+
+A much more sophisticated tweet sentiment analyser was made for the Machine Learning course in the next term, which would be uploaded here in due course. That achieves ~84% accuracy, and uses bidirectional LSTMs. It does not just predict the rating (positive or negative) but also what category a review belongs to (out of five, such as airlines, hotels etc).
