@@ -16,6 +16,9 @@ from sklearn.metrics import classification_report
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 from collections import Counter # used for mode calculation and bias
+
+### The following packages were tried but are not being used in the final version; rationale given below
+
 # from statistics import mode #fails in case of ties
 # from nltk.corpus import wordnet
 # from nltk.stem import WordNetLemmatizer # didn't improve accuracy, maybe due to informal, ungrammatical language and small example lengths
